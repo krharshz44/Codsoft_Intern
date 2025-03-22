@@ -10,7 +10,7 @@ The **CodeSoft Internship** is a dynamic and hands-on learning experience design
 - 🌍 **Networking**: Connect with professionals and fellow interns to expand your tech community.
 
 ## Technologies Covered
-- **Front-End**: HTML, CSS, JavaScript, React.js
+- **Front-End**: HTML, CSS, JavaScript
 
 ## Conclusion
 The **CodeSoft Internship** is a good Beginner-friendly opportunity for students to **gain beginner and all the basic skills**, build an impressive portfolio, landing pages, websites and kickstart their career in tech. and **code for your future!** 🚀
