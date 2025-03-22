@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.calculator {
+    width: 360px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Animated Display */
+#display {
+    width: 100%;
+    height: 70px;
+    text-align: right;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: #e3e3e3;
+    color: #333;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.2s ease-in-out, font-weight 0.2s ease-in-out;
+}
+
+/* Display Hover Effect */
+#display:hover {
+    font-weight: bold;
+    transform: scale(1.05);
+}
+
+/* Display Animation on Number Change */
+@keyframes pop {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#display.animated {
+    animation: pop 0.2s ease-in-out;
+}
+
+/* Button Styles */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-content: center;
+}
+
+.btn {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px; /* Rounded square shape */
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+/* Button Colors */
+.btn {
+    background-color: #d1ecf1; /* Light blue */
+    color: #007bff; /* Punchy blue */
+}
+
+/* Hover Effect - Darkens Slightly */
+.btn:hover {
+    background-color: #b3e0ea;
+}
+
+/* Tap (Click) Effect - Black Background with White Text */
+.btn:active {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Special Buttons */
+.clear {
+    background-color: #f8d7da; /* Light red */
+    color: #dc3545;
+}
+
+.clear:hover {
+    background-color: #f5b7b1;
+}
+
+.clear:active {
+    background-color: #000;
+    color: #fff;
+}
+
+.delete {
+    background-color: #fff3cd; /* Light yellow */
+    color: #f39c12;
+}
+
+.delete:hover {
+    background-color: #f9e79f;
+}
+
+.delete:active {
+    background-color: #000;
+    color: #fff;
+}
+
+.equal {
+    background-color: #d4edda; /* Light green */
+    color: #28a745;
+}
+
+.equal:hover {
+    background-color: #b8dfc1;
+}
+
+.equal:active {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Zero button spans two columns */
+.zero {
+    grid-column: span 2;
+    width: 150px;
+    border-radius: 20px;
+}
+
+/* History Section */
+.history {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.history h3 {
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.history ul {
+    list-style: none;
+    padding: 0;
+    font-size: 0.9rem;
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.history ul li {
+    background: #e3e3e3;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 3px;
+}
+
+/* Delete History Button */
+.clear-history {
+    background-color: #d1ecf1;
+    color: #007bff;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.clear-history:hover {
+    background-color: #b3e0ea;
+}
+
+.clear-history:active {
+    background-color: #000;
+    color: #fff;
+}
